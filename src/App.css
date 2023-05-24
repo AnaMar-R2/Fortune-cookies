@@ -1,0 +1,112 @@
+/* app */
+
+.app{
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.app__title{
+    font-family: 'Yuji Boku', serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(146, 80, 15);
+    text-shadow:  -6px -6px 4px rgb(108, 89, 45);
+}
+
+.fade-enter{
+    opacity: 0;
+}
+.fade-exit{
+    opacity: 1;
+}
+.fade-enter-active{
+    opacity: 1;
+}
+.fade-exit-active{
+    opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+    transition: opacity 150ms;
+}
+
+/* CONTAINER card Button */
+
+.app__cardButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+/* card */
+
+.card{
+    height: 200px;
+    padding: 1.5em;
+    border-radius: 1.8em;
+    width: 100%;
+    max-width: 450px;
+}
+.card-img{
+    width: 100%;
+}
+.card-p{
+    width: 80%;
+    position: relative;
+    top: -9em;
+    left: 2em;
+}
+
+/* button */
+
+.app__btn{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff10;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px #4f0404;
+    padding-top: 2.5em;
+    font-weight: 700;
+}
+.span-btn{
+    text-shadow: 1px 1px 2px #f46060cc;
+}
+.img-btn{
+    height: 45px;
+}
+
+/* autor */
+
+.app__author{
+    margin-top: 5em;
+    padding: 0.2em 4em;
+    background-color: #00000055;
+    color: antiquewhite;
+    font-family: 'Yuji Boku', serif;
+    font-size: 1.07em;
+    font-weight: 600;
+}
+
+@media (min-width: 700px) {
+    .app{
+        gap: 4em;
+    }
+    
+    .app__cardButton{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+}

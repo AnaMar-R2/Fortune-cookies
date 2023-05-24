@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Yuji+Boku&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0;
+    background-color: #ccbc9e;
+}
+
+h1,h2,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
